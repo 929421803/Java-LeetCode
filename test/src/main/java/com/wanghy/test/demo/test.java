@@ -9,18 +9,16 @@ import java.util.Map;
  * @ Description：
  */
 public class test {
-    public static void main(String[] args){
-        Map map = new HashMap(1);
-        map.put("test" , null);
-        System.out.println(map.get("test"));
-        System.out.println(map.get("test1"));
-        System.out.println(1<<2);
-        System.out.println(8>>2);
-        long sum = 0;
-        for (int i = 0; i < 10000000; i++) {
-            sum+=i;
-        }
-        System.out.println(sum);
+	public static void main(String[] args) {
+		Map map = new HashMap();
+		map.put(1, 1);
+		map.put(2, 1);
+		map.put(3, 1);
+		map.put(11, 1);
+		map.put(12, 1);
+		for (Object o : map.keySet()) {
+			System.out.println(o);
+		}
 
-    }
+	}
 }
